@@ -24,3 +24,19 @@ h1{
   height: 200px;
   background: linear-gradient(to right, red -40%, blue 140%)
 }
+
+#blue1{
+  background-color: blue;
+  width: 550px;
+  height: 320px;
+}
+
+#red1{
+  background-color: red;
+  width: 550px;
+  height: 320px;
+}
+
+.foto1{
+  height: 250px;
+}
