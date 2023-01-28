@@ -27,7 +27,7 @@ h1{
 
 #blue1{
   background-color: blue;
-  width: 550px;
+  width: 50%;
   height: 320px;
 }
 
@@ -38,5 +38,6 @@ h1{
 }
 
 .foto1{
-  height: 250px;
+  width: 50%;
 }
+
