@@ -1,0 +1,17 @@
+#box1{
+  background-color: red;
+  color: white;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  border: 15px solid greenyellow;
+}
+
+#box2{
+  background-color: blue;
+  color: white;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  border: 10px solid black;
+}

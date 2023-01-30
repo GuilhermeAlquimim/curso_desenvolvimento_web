@@ -18,63 +18,9 @@
   background-size: cover;
 }
 
-#sla2{
-  height: 200px;
-  background: linear-gradient(to right, red -40%, blue 140%)
-}
 
-#blue1{
-  background-color: blue;
-  width: 50%;
-  height: 320px;
-}
 
-#red1{
-  background-color: red;
-  width: 550px;
-  height: 320px;
-}
 
-.foto1{
-  width: 50%;
-}
 
-.fontes1{
-  font-family: "Comic Sans MS", Arial, monospace;
-  font-style: italic;
-  font-size: larger;
-  font-weight: 600;
-  font-variant: small-caps;
-}
 
-#borda1{
-  height: 100px;
-  background-color: red;
-  border-width: 10px;
-  border-style: solid;
-  border-color: aqua;
-}
 
-#borda3{
-  height: 100px;
-  width: 100px;
-  background-color: green;
-  border: 10px red solid;
-  border-radius: 50%;
-}
-
-.bordaP{
-  border: 5px purple solid ;
-}
-
-#margin1{
-  background-color: red;
-  color: white;
-  height: 100px;
-}
-
-#padding1{
-  background-color: blue;
-  color: white;
-  height: 100px;
-}
