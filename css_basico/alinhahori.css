@@ -1,0 +1,24 @@
+.div1 {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  border: 5px solid red;
+  margin-left: auto;
+}
+
+p {
+  margin-left: 250px;
+  margin-right: 250px;
+  /* margin: auto; */
+  border: 3px solid black;
+}
+
+.div2 {
+  background-color: red;
+  text-align: center;
+}
+
+img {
+  background-color: red;
+}
