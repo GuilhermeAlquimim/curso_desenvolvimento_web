@@ -1,0 +1,25 @@
+div {
+  width: 500px;
+  background-color: #eee;
+  margin: auto;
+  padding: 30px;
+}
+
+li {
+  list-style-type: upper-alpha;
+  background-color: #cceaff;
+  border: 1px solid #5ca8ef;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: url(../images/youtube-logo.png), crosshair;
+}
+
+ul {
+  padding: 30px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

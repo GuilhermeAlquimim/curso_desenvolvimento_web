@@ -1,0 +1,21 @@
+a {
+  background-color: lightblue;
+  color: crimson;
+  padding: 13px 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+a:visited {
+  background-color: violet;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+a:active {
+  background-color: blueviolet;
+  color: white;
+}
