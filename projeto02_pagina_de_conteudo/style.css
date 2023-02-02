@@ -7,37 +7,44 @@ body {
 
 .top-bar {
   background-color: #333;
-  border-bottom: 5px solid rgb(230, 149, 0);
+  border-bottom: 5px solid #fd8a24;
   color: #fff;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  padding: 10px;
+  padding: 8px;
 }
 
 .container {
-  width: 700px;
+  width: 888px;
   margin: auto;
+  padding: 30px;
 }
 
-h1 {
-  font-size: 40px;
+.headerline {
+  font-size: 56px;
+  line-height: 64px;
+}
+
+.sub-tittle{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.author{
+  font-size: 13px;
+  font-weight: bold;
 }
 
 small {
   color: lightgray;
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header-img {
-  margin-right: 15px;
+  margin: 10px 15px 15px 0;
 }
-
-
-
-
-
-/* footer {
-  background-color: #333;
-  height: 70px;
-  margin-top: auto;
-} */
