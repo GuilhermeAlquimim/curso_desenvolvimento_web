@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position - Static e Relative</title>
+
+    <!-- Static / Relative / Absolute / Fixed / Sticky -->
+
+    <style>
+
+        h1 {
+            position: sticky;
+            top: 0px;
+            text-align: right;
+        }
+
+        .quadro {
+            width: 600px;
+            height: 4000px;
+            border: 1px solid;
+            position: relative;
+        }
+
+        .square-red {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            left: 100px;
+        }
+
+        .square-green {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: static;
+        }
+
+        .square-blue {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: fixed;
+            top: 500px;
+        }
+
+        .square-cyan {
+            width: 100px;
+            height: 100px;
+            background-color: cyan;
+            position: absolute;
+            right: 0;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <!-- CSS intermediário - Position Static e Relative -->
+    <h1>Position - Static & Relative</h1>
+
+    <div class="quadro">
+        <div class="square-red"></div>
+        <div class="square-green"></div>
+        <div class="square-blue"></div>
+        <div class="square-cyan"></div>
+    </div>
+    
+</body>
+</html>
