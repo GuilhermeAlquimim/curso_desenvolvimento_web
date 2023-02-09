@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+
+    <style>
+
+        .head-bar {
+            max-width: 70%;
+            background-color: #27a4d6;
+            margin: auto;
+            padding: 20px 0;
+        }
+
+        .menu {
+            list-style: none;
+            list-style-position: inside;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            padding: 15px;
+            background-color: gray;
+            color: #fff;
+            text-align: center;
+            width: 70%;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: 375px) {
+
+            .head-bar {
+                background-color: blueviolet;
+            }
+            
+            li {
+                background-color: crimson;
+                color: aqua;
+            }
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="head-bar">
+        <ul class="menu">
+            <li>Home</li>
+            <li>Menu</li>
+            <li>Contacts</li>
+        </ul>
+    </div>
+
+    
+
+
+    
+</body>
+</html>
