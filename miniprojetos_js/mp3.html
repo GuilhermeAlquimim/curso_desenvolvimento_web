@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-projeto 03</title>
+</head>
+<body>
+    <script>
+        // Criar uma função que ao digitar um número:
+        // Divisível por 3 => Fizz
+        // Divisível por 5 => Buzz
+        // Divisível por 3 e 5 => FizzBuzz
+        // Não divisível por 3 ou 5 => Valor de entrada
+        // Não é um número => "Não é um número"
+
+        let resultado = "";
+        
+        function fizzBuzz (num) {
+            if (typeof num !== "number")
+                resultado = "Não é um número."
+
+            else if (num %3 === 0 && num %5 === 0) 
+                resultado = "FizzBuzz"
+
+            else if (num %3 === 0) 
+                resultado = "Fizz"
+
+            else if (num %5 === 0)
+                resultado = "Buzz"
+            
+            else if (num %3 !== 0 && num %5 !== 0)
+                resultado = num
+        };
+
+        fizzBuzz(15)
+        console.log(resultado)
+    </script>
+</body>
+</html>

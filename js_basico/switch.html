@@ -4,13 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conddicional Switch</title>
+    <title>Condicional Switch</title>
 </head>
 <body>
 
     <script>
 
-        
+        var n1 = 9;
+        var n2 = 10;
+        var med = (n1+n2)/2;
+
+        console.log(`Nota 1: ${n1} \nNota 2: ${n2}`)
+
+        if (med >= 9) {
+            console.log(`Média: ${med}`)
+            var conceito = `Ótimo`
+        }
+
+        else if (med >= 6.5) {
+            console.log(`Média: ${med}`)
+            var conceito = `Bom`
+        }
+
+        else if (med >= 9) {
+            console.log(`Média: ${med}`)
+            var conceito = `Regular`
+        }
+
+        else {
+            console.log(`Média: ${med}`)
+            var conceito = `Insuficiente`
+        }
+
+        switch (conceito) {
+            case `Ótimo`:
+                console.log(`Parabéns, continue assim!`)
+                break
+
+            case `Bom`:
+                console.log(`Parabéns, continue se esforçando!`)
+                break
+
+            case `Regular`:
+                console.log(`Quase lá, estude um pouco mais.`)
+                break
+
+            case `Insuficiente`:
+                console.log(`Está na hora de se dedicar.`)
+                break
+
+            default: `Houve algum erro.`
+                break
+        }
 
 
     </script>
