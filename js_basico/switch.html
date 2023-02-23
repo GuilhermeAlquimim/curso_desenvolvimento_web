@@ -1,67 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Condicional Switch</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <script>
+      var n1 = 9;
+      var n2 = 10;
+      var med = (n1 + n2) / 2;
 
-        var n1 = 9;
-        var n2 = 10;
-        var med = (n1+n2)/2;
+      console.log(`Nota 1: ${n1} \nNota 2: ${n2}`);
 
-        console.log(`Nota 1: ${n1} \nNota 2: ${n2}`)
+      if (med >= 9) {
+        console.log(`Média: ${med}`);
+        var conceito = `Ótimo`;
+      } else if (med >= 6.5) {
+        console.log(`Média: ${med}`);
+        var conceito = `Bom`;
+      } else if (med >= 9) {
+        console.log(`Média: ${med}`);
+        var conceito = `Regular`;
+      } else {
+        console.log(`Média: ${med}`);
+        var conceito = `Insuficiente`;
+      }
 
-        if (med >= 9) {
-            console.log(`Média: ${med}`)
-            var conceito = `Ótimo`
-        }
+      switch (conceito) {
+        case `Ótimo`:
+          console.log(`Parabéns, continue assim!`);
+          break;
 
-        else if (med >= 6.5) {
-            console.log(`Média: ${med}`)
-            var conceito = `Bom`
-        }
+        case `Bom`:
+          console.log(`Parabéns, continue se esforçando!`);
+          break;
 
-        else if (med >= 9) {
-            console.log(`Média: ${med}`)
-            var conceito = `Regular`
-        }
+        case `Regular`:
+          console.log(`Quase lá, estude um pouco mais.`);
+          break;
 
-        else {
-            console.log(`Média: ${med}`)
-            var conceito = `Insuficiente`
-        }
+        case `Insuficiente`:
+          console.log(`Está na hora de se dedicar.`);
+          break;
 
-        switch (conceito) {
-            case `Ótimo`:
-                console.log(`Parabéns, continue assim!`)
-                break
-
-            case `Bom`:
-                console.log(`Parabéns, continue se esforçando!`)
-                break
-
-            case `Regular`:
-                console.log(`Quase lá, estude um pouco mais.`)
-                break
-
-            case `Insuficiente`:
-                console.log(`Está na hora de se dedicar.`)
-                break
-
-            default: `Houve algum erro.`
-                break
-        }
-
-
+        default:
+          `Houve algum erro.`;
+          break;
+      }
     </script>
-
-
-
-    
-</body>
+  </body>
 </html>
