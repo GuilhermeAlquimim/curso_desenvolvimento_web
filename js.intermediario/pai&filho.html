@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elementos Pai e filho</title>
+  </head>
+  <body>
+    <script>
+      window.onload = function () {
+        let h1 = document.getElementsByTagName("h1")[0];
+        let d1 = document.getElementsByTagName("div")[1];
+        console.log(d1.children);
+      };
+    </script>
+
+    <div id="d1">
+      <h1>Título 1</h1>
+      <p>Parágrafo 1</p>
+    </div>
+
+    <div id="d2">
+      <h1>Título 2</h1>
+      <p>Parágrafo 2</p>
+    </div>
+  </body>
+</html>

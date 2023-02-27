@@ -8,7 +8,7 @@
     <script src="./script.js"></script>
 
     <style>
-      div {
+      #d1 {
         color: #fff;
         background-color: aquamarine;
         display: inline-block;
@@ -17,11 +17,13 @@
       }
     </style>
   </head>
-  <body>
+  <body onload="console.log('Página totalmente carregada.')">
     <h1>Título qualquer</h1>
 
-    <div onclick="hideh1()">Hide</div>
+    <div id="d1" onmouseover="onOver(this)" onmouseout="onOut(this)" onclick="hideh1()">Hide</div>
 
     <input type="text" oninput="mudarh1(this)" />
+
+    <div id="d1" onmouseover="onOver(this)" onmouseout="onOut(this)" onclick="appearh1()">Appear</div>
   </body>
 </html>

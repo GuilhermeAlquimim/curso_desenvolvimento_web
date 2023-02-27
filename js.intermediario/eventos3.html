@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Events 3/3</title>
+  </head>
+  <body onload="loaded()">
+    <script>
+      function loaded() {
+        let t1 = document.getElementById("tit");
+
+        // t1.onclick = mudarText;
+
+        t1.addEventListener("mouseover", changeText);
+        t1.addEventListener("mouseout", unchangeText);
+
+        function changeText() {
+          this.innerText = "Mouse dentro";
+        }
+
+        function unchangeText() {
+          this.innerText = "Mouse fora";
+        }
+      }
+    </script>
+
+    <h1 id="tit">Título teste</h1>
+  </body>
+</html>
