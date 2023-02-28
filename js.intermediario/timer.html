@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer e intervalo</title>
+  </head>
+  <body>
+    <script>
+      function changeT() {
+        let h = document.getElementsByTagName("h1")[0];
+        h.innerText = "New tittle";
+
+        window.setInterval(addNumber, 1000);
+      }
+
+      num = 1;
+
+      function addNumber() {
+        let h = document.getElementsByTagName("h1")[0];
+        h.innerText = `${h.innerText} ${num}`;
+        num++;
+      }
+
+      // function changeColor() {
+      //   let h = document.getElementsByTagName("h1")[0];
+      //   h.style.color = "blue";
+      // }
+    </script>
+
+    <h1>Título</h1>
+    <input type="submit" value="Change" onclick="changeT()" />
+  </body>
+</html>

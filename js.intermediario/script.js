@@ -20,3 +20,15 @@ function onOver(element) {
 function onOut(element) {
   element.style.backgroundColor = "purple";
 }
+
+let a = { name: "Guizão", age: 18 };
+
+console.log(a);
+console.log(JSON.stringify(a));
+
+console.log(".");
+
+let b = '{"nome": "Gui", "idade": 18}';
+
+console.log(b);
+console.log(JSON.parse(b));
