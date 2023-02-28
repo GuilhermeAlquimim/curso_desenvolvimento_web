@@ -8,19 +8,21 @@
   </head>
   <body>
     <script>
-      function changeT() {
-        let h = document.getElementsByTagName("h1")[0];
-        h.innerText = "New tittle";
+      var num = 1;
+      var interval;
 
-        window.setInterval(addNumber, 1000);
+      function startNumbers() {
+        let h = document.getElementsByTagName("h1")[0];
+        h.innerHTML = `${h.innerHTML} ${num}`;
+        num++;
       }
 
-      num = 1;
+      function startT() {
+        interval = setInterval(startNumbers, 500);
+      }
 
-      function addNumber() {
-        let h = document.getElementsByTagName("h1")[0];
-        h.innerText = `${h.innerText} ${num}`;
-        num++;
+      function stopT() {
+        window.clearInterval(interval);
       }
 
       // function changeColor() {
@@ -30,6 +32,7 @@
     </script>
 
     <h1>Título</h1>
-    <input type="submit" value="Change" onclick="changeT()" />
+    <input type="submit" value="Start" onclick="startT()" />
+    <input type="submit" value="Stop" onclick="stopT()" />
   </body>
 </html>
