@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  position: relative;
+}
+
+#video1 {
+  width: 640px;
+  height: 360px;
+}
+
+.control-buttons {
+  position: absolute;
+  top: 100%;
+  transform: translate(-25%, -100%);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.img-size {
+  width: 60px;
+}
+
+.img-size:hover {
+  cursor: pointer;
+}

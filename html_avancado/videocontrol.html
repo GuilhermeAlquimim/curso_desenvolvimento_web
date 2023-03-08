@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controle de vídeo</title>
+    <link rel="stylesheet" href="./videocontrol.css" />
+  </head>
+  <body>
+    <h1>Hades | rap do Alone (Saint Seiya: The Lost Canvas) | Enygma</h1>
+
+    <div class="container">
+      <video id="video1" poster="../assets/enygma-rap-alone-poster.jpeg" src="../assets/Hades   Alone (Saint Seiya The Lost Canvas)   Enygm.mp4"></video>
+
+      <div class="control-buttons">
+        <img class="img-size" src="../assets/Video-control-icons/play-button-icon.png" onclick="play()" />
+        <img class="img-size" src="../assets/Video-control-icons/pause-button-icon.png" onclick="pause()" />
+        <img class="img-size" src="../assets/Video-control-icons/less-button-icon.png" onclick="diminuir_vel()" />
+        <img class="img-size" src="../assets/Video-control-icons/backward-five-seconds-icon.png" onclick="backward()" />
+        <img class="img-size" src="../assets/Video-control-icons/forward-five-seconds-icon.png" onclick="forward()" />
+        <img class="img-size" src="../assets/Video-control-icons/add-button-icon.png" onclick="aumentar_vel()" />
+        <img class="img-size" src="../assets/Video-control-icons/stop-button-icon.png" onclick="parar()" />
+      </div>
+    </div>
+
+    <script src="./videocontrol.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atributos personalizados</title>
+  </head>
+  <body>
+    <img id="first-image" src="../assets/thumbs-up-icon.png" width="200px" />
+
+    <ul id="list" data-qtd="10"></ul>
+
+    <script>
+      let lista = document.getElementById("list");
+
+      let qtd = lista.dataset.qtd;
+
+      let conteudo = "";
+
+      for (let i = 1; i <= qtd; i++) {
+        conteudo += `<li> ${i} </li>`;
+      }
+
+      lista.innerHTML = conteudo;
+    </script>
+  </body>
+</html>
